@@ -9,8 +9,11 @@ import SwiftUI
 
 struct CategoryListView: View {
     
+    @State private var isModalPresented = false
+    
     var viewModel: CategoryViewModel
     var albumVM: AlbumViewModel
+    
     
     var body: some View {
         
@@ -66,16 +69,17 @@ struct CategoryListView: View {
                         }
                       
                         HStack{
-                        Spacer()
-                            .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                            .overlay{
-                                NavigationLink(destination: prova()){
-                                    
-                                    Bottone()
-                                }
-                                }
-                                
-                                
+                                                    Spacer()
+                                                        .frame(height: 100)
+                                                        .overlay {
+                                                            Bottone()
+                                                                .onTapGesture {
+                                                                    isModalPresented.toggle()
+                                                                }
+                                                                .sheet(isPresented: $isModalPresented) {
+                                                                    prova()
+                                                                }
+                                                        }
                                 
                             }
                     }
