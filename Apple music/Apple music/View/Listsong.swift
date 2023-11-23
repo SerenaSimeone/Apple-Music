@@ -23,10 +23,10 @@ struct Listsong: View {
                     Image(song.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 80)
+                        .frame(width: 50)
                         .cornerRadius(7)
                         .shadow(radius: 10)
-                        .padding(.leading, -80)
+                        .padding(.leading, -60)
                     
                     VStack (alignment: .leading) {
                         Text(song.title)
@@ -37,7 +37,7 @@ struct Listsong: View {
                             .font(.system(size: 18))
                             .opacity(0.5)
                     }
-                } 
+                }
                 .padding(.horizontal, 60)
                 
             

@@ -16,7 +16,7 @@ struct SongView: View {
                 Image("mercury")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 80)
+                    .frame(width: 60)
                     .cornerRadius(7)
                     .shadow(radius: 10)
                 

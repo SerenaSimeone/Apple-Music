@@ -16,6 +16,7 @@ struct queue: View {
        
         
             VStack {
+                Spacer()
                 SongView()
                 // Header
                 HStack {
@@ -48,7 +49,7 @@ struct queue: View {
                 }
                 .offset(x:-30)
                 
-                // Lista di canzoni
+           
                 List {
                     ForEach(viewModel.song) { song in
                         Listsong(song: song)

@@ -13,7 +13,7 @@ class CategoryViewModel {
         Category(systemName: "music.note.list", name: "Playlists"),
         Category(systemName: "music.mic", name: "Artists"),
         Category(systemName: "square.stack", name: "Albums"),
-        Category(systemName: "music.note", name: "Songs"),
+        Category(systemName: "music.note", name: " Songs"),
         Category(systemName: "guitars", name: "Genres"),
         Category(systemName: "music.quarternote.3", name: "Composers")
         
